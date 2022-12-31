@@ -19,7 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18;
+console.log(votingAge>=18)
 
 
 /*
@@ -34,8 +35,13 @@ Do the following:
    HINT: no function required
 */
 
-
-
+const firstThing = 12;
+const secondThing = 8;
+if (firstThing > secondThing){
+console.log('First thing is greater')
+}else {
+  console.log('Second thing is greater');
+}
 
 
 /*
@@ -49,7 +55,7 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let stringy = '1999';
 
 
 /*
