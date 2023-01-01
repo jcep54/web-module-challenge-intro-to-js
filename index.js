@@ -56,7 +56,9 @@ Do the following:
 */
 
 let stringy = '1999';
-
+stringy = Number(stringy);
+console.log(typeof stringy);
+console.log(stringy);
 
 /*
 Task 1d - Multiply
