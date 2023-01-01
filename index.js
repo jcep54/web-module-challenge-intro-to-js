@@ -72,9 +72,11 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-
-
-
+function callMultiply(){
+const sum = multiply(4,8);
+return sum;
+}
+console.log(callMultiply())
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Age in Dog years
