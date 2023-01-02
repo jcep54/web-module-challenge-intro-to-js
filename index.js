@@ -188,9 +188,28 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  /*add your code here*/
-}
+  const randomNum = Math.round(Math.random() * 2);
+  if (randomNum === 0){
+    computer = 'rock';
+  } else if (randomNum === 1){
+    computer = 'paper'
+  } else {
+    computer = 'scissors'
+  }
 
+  if (user === computer){
+    return "it's a tie";
+  } else if (user === 'rock' && computer === 'scissors'){
+    return "you win!";
+  }else if (user === 'paper' && computer === 'rock'){
+    return "you win!";
+  } else if (user === 'scissors' && computer === 'paper'){
+    return "you win!";
+  } else {
+    return "you lose!"
+  }
+}
+console.log(game('rock','paper'))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
