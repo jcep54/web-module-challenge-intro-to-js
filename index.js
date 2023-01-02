@@ -282,10 +282,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+  if (score >= 90 && score <= 100){
+    return 'you got an A';
+  } else if (score >= 80 && score <= 89){
+    return 'you got a B'; 
+  }else if (score >= 70 && score <= 79){
+    return 'you got a C';
+  }else if (score >= 60 && score <= 69){
+    return 'you got a D';
+  }else{
+    return 'you got a F';
+  }
 }
-
+console.log(grade(90))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -301,9 +311,18 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(word) {
+  word = word.toUpperCase();
+  let numVowels = 0;
+  for (let i = word.length;i > 0; i -= 1){
+    if (word.charAt(i-1)=== 'A' || word.charAt(i-1)=== 'E' || word.charAt(i-1)=== 'I' || word.charAt(i-1)=== 'O' || word.charAt(i-1)=== 'U'){
+      numVowels += 1;
+    }
+  }
+  return numVowels;
 }
+
+console.log(vowelCounter('peanut butter'))
 
 
 
