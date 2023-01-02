@@ -227,7 +227,7 @@ function miles(kilometers){
   const converstion = kilometers * 0.62137119;
   return converstion;
 }
-console.log(miles(45))
+console.log(miles(45));
 
 
 //Task 5b - Centimeters to Feet
@@ -238,10 +238,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(Centimeters){
+  return Centimeters * 0.0328084;
 }
-
+console.log(feet(50))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
