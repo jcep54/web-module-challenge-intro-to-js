@@ -209,7 +209,7 @@ function game(user, computer){
     return "you lose!"
   }
 }
-console.log(game('rock','paper'))
+console.log(game('paper','paper'))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -223,10 +223,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  const converstion = kilometers * 0.62137119;
+  return converstion;
 }
-
+console.log(miles(45))
 
 
 //Task 5b - Centimeters to Feet
